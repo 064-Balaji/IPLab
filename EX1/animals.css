@@ -1,0 +1,14 @@
+.content{
+    padding-left: 400px;
+}
+
+p{
+    text-indent: 20px;
+}
+
+img {
+    position: absolute;
+    top: 50px;
+    border-radius: 5px;
+    width: 375px;
+}
