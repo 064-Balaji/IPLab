@@ -1,91 +1,91 @@
-/* 
-    Document   : style
-    Created on : Feb 7, 2024, 2:52:44 PM
-    Author     : admin
-    Description:
-        Purpose of the stylesheet follows.
-*/
-
-root { 
-    display: block;
+body {
+  padding: 0;
+  margin: 0;
 }
 
-.title{
-    text-align: center;
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.contents{
-    font-size: 20px;
-    text-align: center;
+.top,
+.middle,
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
-    justify-content: center;
-    height: 100vh;
-    align-items: center
+.sidebar > .top {
+  flex: 1;
+  justify-content: center;
 }
 
-.header{
-    position: sticky;
-    display: flex;
-    height: 100px;
-    background-color: rgba(255,255,255,0.5);
-    
+.sidebar > .middle {
+  flex: 3;
 }
 
-.left{
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
+.sidebar > .bottom {
+  flex: 1;
+  justify-content: center;
 }
 
-.right{
-    display: flex;
-    flex: 2;
-    align-items: center;
-    justify-content: center;
-    margin-right: 15px;
+.content {
+  padding: 25px 200px;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
 }
 
-.middle{
-    display: flex;
-    flex: 3;
-    justify-content: space-around;
-    align-items: center;
+.top {
+  display: flex;
+  flex-direction: row;
 }
 
-img{
-    height: 75%;
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  column-gap: 10px;
 }
 
-body{
-    padding-bottom: 1000px;
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.link{
-    text-decoration: none;
+.con-middle {
+  display: flex;
+  flex-direction: column;
 }
 
-body{
+.side-img {
+  width: 50%;
 }
 
-.back{
-    position: absolute;
-    opacity: 0.5;
-    width: 100%;
-    height: 100vh;
+.cont-img {
+  height: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(201, 201, 201, 0.712);
 }
 
-h1{
-    padding-top: 200px;
-    text-align: center;
+.goal-img {
+  width: 100%;
+  height: 300px;
+  border-radius: 30px;
 }
 
-h4{
-    text-align: center;
-    padding-top: 10px;
+h1 {
+  font-family: TYPOGRAPHY;
 }
