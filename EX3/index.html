@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>connemora central library</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- <img src="./assets/library.jpeg" class="bg-img" /> -->
+    <h1 class="title">Connemora Central Library</h1>
+    <button class="login button" onclick="login()">Login</button>
+
+    <div class="form">
+      <label>
+        Username:
+        <input type="text" />
+      </label>
+      <label>
+        Password:
+        <input type="text" />
+      </label>
+      <button class="button logging">Login</button>
+      <button class="close button" onclick="closeForm()">
+        <img src="./assets/close.png" />
+      </button>
+    </div>
+
+    <div class="book-container">
+      <div class="card">
+        <img src="./assets/mystery.jpg" class="book-img" />
+        <h4 class="book-title">Mystery</h4>
+      </div>
+      <div class="card">
+        <img src="./assets/fantasy.jpg" class="book-img" />
+        <h4 class="book-title">Fantasy</h4>
+      </div>
+      <div class="card">
+        <img src="./assets/science-fiction.png" class="book-img" />
+        <h4 class="book-title">Science Fiction</h4>
+      </div>
+    </div>
+    <script>
+      function login() {
+        let form = document.getElementsByClassName("form")[0];
+        form.className = "form form-visible";
+      }
+      function closeForm() {
+        let form = document.getElementsByClassName("form")[0];
+        form.className = "form form-close";
+      }
+    </script>
+  </body>
+</html>
