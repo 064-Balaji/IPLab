@@ -28,8 +28,35 @@ const greetings = () => {
   alert("Welcome " + name);
 
   const date = new Date();
-  const curdate = date.getDate();
+  const months = [
+    "January",
+    "Feburary",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  let curdate = date.getDate();
+  let curmonth = months[date.getMonth()];
+  let curyear = date.getFullYear();
+  const holder = document.getElementById("holder");
 
-  document.createElement("p");
-  document.createTextNode("");
+  let p = document.createElement("p");
+  let currentDate = document.createTextNode(
+    curmonth + ", " + curdate + " " + curyear
+  );
+  p.appendChild(currentDate);
+  holder.appendChild(p);
+};
+
+const changeback = () => {
+  const eleme = document.getElementById("backhover");
+  console.log(eleme);
+  eleme.style.backgroundColor = "yellow";
 };
