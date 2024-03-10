@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset class="cap">
+        <legend>Employee Register</legend>
+        <label>Employee Id: <input type="text" id="id" /></label>
+        <label>Employee Name: <input type="text" id="name" /></label>
+        <label>DOB: <input type="date" id="dob" /></label>
+        <div class="gender">
+          <label style="margin-right: 17rem">Gender:</label>
+          <input type="radio" name="gender" />Male
+          <input type="radio" name="gender" />Female
+        </div>
+
+        <label>Age: <input type="number" /></label>
+        <label
+          >Address: <textarea id="address" cols="30" rows="3"></textarea>
+        </label>
+        <label
+          >Qualification:
+          <select id="qualification">
+            <option value="BE">B.E</option>
+            <option value="BTECH">B.Tech</option>
+            <option value="BSC">Bsc</option>
+          </select>
+        </label>
+        <label>Contact Number: <input type="tel" /></label>
+        <label>Area of Intrest: <input type="text" id="intrest" /></label>
+        <label
+          >Years of Experience:
+          <input type="text" id="exp" />
+        </label>
+      </fieldset>
+      <button type="submit">Submit</button>
+      <button type="reset">Clear</button>
+    </form>
+  </body>
+</html>

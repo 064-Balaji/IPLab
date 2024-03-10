@@ -1,0 +1,23 @@
+.cap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  border-radius: 12px;
+  padding: 1rem 1rem;
+  align-items: center;
+}
+
+.cap * {
+  display: grid;
+  grid-template-columns: 8rem 20rem;
+}
+
+.gender {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.gender > * {
+  display: flex !important;
+}
