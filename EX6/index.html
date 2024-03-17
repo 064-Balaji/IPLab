@@ -3,6 +3,37 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
-  <body></body>
+  <style>
+    .content {
+      width: 300px;
+      height: 150px;
+      background-color: tomato;
+    }
+  </style>
+  <body>
+    <div class="content">Hover over Me</div>
+    <textarea placeholder="Enter some text"></textarea>
+    <button>Click Me</button>
+
+    <script>
+      $("div").hover(
+        () => {
+          $("div").css({
+            "background-color": "yellow",
+          });
+        },
+        () => {
+          $("div").css({
+            "background-color": "tomato",
+          });
+        }
+      );
+      $("button").click(() => {
+        let vas = $("textarea").val();
+        $("textarea").val(vas.length);
+      });
+    </script>
+  </body>
 </html>
